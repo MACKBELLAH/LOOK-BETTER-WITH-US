@@ -18,6 +18,18 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        flex-shrink: 0;
+      }
+      .info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 0.85rem 0;
+        border-bottom: 1px solid #f1e3db;
+      }
+      .info-item:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
       }
       .map-frame {
         border: 0;
@@ -58,13 +70,13 @@
     </section>
 
     <main class="container py-5">
-      <div class="row g-4 align-items-center">
+      <div class="row g-4 align-items-stretch">
         <div class="col-lg-5">
           <div class="card contact-card border-0 shadow-sm p-4 h-100">
             <h3 class="fw-bold mb-4">Get in touch</h3>
 
-            <div class="d-flex align-items-start mb-4">
-              <div class="contact-icon me-3">
+            <div class="info-item">
+              <div class="contact-icon">
                 <i class="bi bi-geo-alt-fill"></i>
               </div>
               <div>
@@ -73,19 +85,18 @@
               </div>
             </div>
 
-            <div class="d-flex align-items-start mb-4">
-              <div class="contact-icon me-3">
+            <div class="info-item">
+              <div class="contact-icon">
                 <i class="bi bi-telephone-fill"></i>
- 
+              </div>
               <div>
                 <h6 class="fw-bold mb-1">Call us</h6>
-                
-                <p class="text-secondary mb-0"><a href="tel:0772611570" class="text-decoration-none text-dark">+256 776 999 766</a></p>
+                <p class="text-secondary mb-0"><a href="tel:+256772623576" class="text-decoration-none text-dark">0772 623 576</a></p>
               </div>
             </div>
 
-            <div class="d-flex align-items-start mb-4">
-              <div class="contact-icon me-3">
+            <div class="info-item">
+              <div class="contact-icon">
                 <i class="bi bi-envelope-fill"></i>
               </div>
               <div>
@@ -94,10 +105,9 @@
               </div>
             </div>
 
-            <div class="d-flex align-items-start">
-              <div class="contact-icon me-3">
+            <div class="info-item">
+              <div class="contact-icon">
                 <i class="bi bi-clock-fill"></i>
-
               </div>
               <div>
                 <h6 class="fw-bold mb-1">Opening hours</h6>
@@ -113,23 +123,23 @@
             <form>
               <div class="row g-3">
                 <div class="col-md-6">
-                  <label class="form-label">Full Name</label>
+                  <label class="form-label fw-semibold">Full Name</label>
                   <input type="text" class="form-control" placeholder="Your name">
                 </div>
                 <div class="col-md-6">
-                  <label class="form-label">Email</label>
+                  <label class="form-label fw-semibold">Email</label>
                   <input type="email" class="form-control" placeholder="Your email">
                 </div>
                 <div class="col-12">
-                  <label class="form-label">Subject</label>
+                  <label class="form-label fw-semibold">Subject</label>
                   <input type="text" class="form-control" placeholder="How can we help?">
                 </div>
                 <div class="col-12">
-                  <label class="form-label">Message</label>
+                  <label class="form-label fw-semibold">Message</label>
                   <textarea class="form-control" rows="5" placeholder="Tell us what you're looking for"></textarea>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-dark px-4">Send Message</button>
+                  <button type="submit" class="btn btn-dark px-4 py-2">Send Message</button>
                 </div>
               </div>
             </form>
@@ -199,7 +209,7 @@
           </div>
         </div>
         <div class="text-center text-white-50 mt-3 border-top border-secondary pt-3">
-          <p class="mb-0">&copy; 2026 LOOK BETTER WITH US</p>
+
         </div>
       </div>
     </footer>
